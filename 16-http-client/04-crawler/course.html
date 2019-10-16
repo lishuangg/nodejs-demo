@@ -1,0 +1,682 @@
+<!DOCTYPE HTML>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>免费课 - 思否编程 - 学编程，来思否，升职加薪快人一步</title>
+            <meta name="keywords" content="SegmentFault,思否大学,思否编程,编程学院,思否讲堂,IT精品课,IT实战课程,职业教育,知识付费,技术课程,技术培训,IT培训,在线学编程,IT在线教育,java课程,python课程,springboot课程,前端课程,php课程,vue课程,Vue.js课程,TypeScript课程">
+    
+            <meta name="description" content="思否编程是 SegmentFault 团队打造的面向IT领域的在线专业技能学习提升平台，致力于帮助学员更好的学会编程、提升技术认知、获得专业能力上的突破，实现升职加薪。我们联合一线互联网技术专家为学员提供高质量的前端,java,python,php,vue等在线技术实战精���课程,为开发者构建一所真正的在线技术实战大学。我们的讲师和学员遍布一线知名互联网公司,欢迎想能力提升的你一起前来学习!">
+    
+    <link rel="stylesheet" href="https://edu-cdn.segmentfault.com/v-5d5fb3db/css/fa.css">
+
+            <link rel="stylesheet" href="https://edu-cdn.segmentfault.com/v-5d5fb3db/css/global.css">
+    
+    </head>
+<body>
+<header class="shadow-sm">
+    <div class="topbar bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 text-left homepage">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="/">SegmentFault</a></li>
+                        <li class="list-inline-item"><a href="/questions">问答</a></li>
+                        <li class="list-inline-item"><a href="/blogs">专栏</a></li>
+                        <li class="list-inline-item"><a href="/lives">课程</a></li>
+                        <li class="list-inline-item"><a href="/groups">圈子</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 text-right profile">
+                                            <a href="/user/login" class="text-white">注册 &middot; 登录</a>
+                                    </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-lg bg-white">
+        <div class="container">
+            <a class="navbar-brand mr-4" href="/lives"><img src="https://edu-cdn.segmentfault.com/v-5d5fb3db/images/logo.svg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="展开菜单">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                                                                <li class="nav-item"><a class="nav-link " href="/lives">首页</a></li>
+                                            <li class="nav-item"><a class="nav-link " href="/lives/edu">精品课</a></li>
+                                            <li class="nav-item"><a class="nav-link " href="/lives/study">实战课</a></li>
+                                            <li class="nav-item"><a class="nav-link active" href="/lives/free">免费课</a></li>
+                                    </ul>
+                <form action="/lives/search"
+                      class="form-inline ml-4 d-none d-lg-block mr-auto"
+                      method="get">
+                    <div class="input-group input-group">
+                        <input type="text" name="keyword" size="24" class="form-control" placeholder="课程关键字" aria-label="课程关键字" value="" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="submit">搜索</button>
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/lives/mine">我的课程</a></li>
+                                    </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+<div class="container">
+    <div class="row">
+                <div class="col-lg-8 main">
+                    
+
+<div class="navmenu bg-white overflow-hidden rounded">
+    <div class="container fs-14">
+        <div class="row">
+            <div class="col p-3">
+                    <h4 class="h6"><a href="/lives/free?category=1&sort=hottest" class=" text-reset">前端开发</a></h4>
+    
+
+                <a href="/lives/free?tag=javascript&sort=hottest" class="inline-block mr-1 text-muted">JavaScript</a>
+                <a href="/lives/free?tag=css&sort=hottest" class="inline-block mr-1 text-muted">CSS</a>
+                <a href="/lives/free?tag=html&sort=hottest" class="inline-block mr-1 text-muted">HTML</a>
+                <a href="/lives/free?tag=node.js&sort=hottest" class="inline-block mr-1 text-muted">Node.js</a>
+                <a href="/lives/free?tag=vue.js&sort=hottest" class="inline-block mr-1 text-muted">Vue.js</a>
+                <a href="/lives/free?tag=react.js&sort=hottest" class="inline-block mr-1 text-muted">React.js</a>
+                <a href="/lives/free?tag=jquery&sort=hottest" class="inline-block mr-1 text-muted">jQuery</a>
+            </div>
+            <div class="col p-3">
+                    <h4 class="h6"><a href="/lives/free?category=2&sort=hottest" class=" text-reset">后端开发</a></h4>
+    
+
+                <a href="/lives/free?tag=java&sort=hottest" class="inline-block mr-1 text-muted">Java</a>
+                <a href="/lives/free?tag=php&sort=hottest" class="inline-block mr-1 text-muted">PHP</a>
+                <a href="/lives/free?tag=go&sort=hottest" class="inline-block mr-1 text-muted">Go</a>
+                <a href="/lives/free?tag=springboot&sort=hottest" class="inline-block mr-1 text-muted">Spring Boot</a>
+                <a href="/lives/free?tag=python&sort=hottest" class="inline-block mr-1 text-muted">Python</a>
+                <a href="/lives/free?tag=c&sort=hottest" class="inline-block mr-1 text-muted">C</a>
+                <a href="/lives/free?tag=c%2B%2B&sort=hottest" class="inline-block mr-1 text-muted">C++</a>
+                <a href="/lives/free?tag=swoole&sort=hottest" class="inline-block mr-1 text-muted">Swoole</a>
+                <a href="/lives/free?tag=%E7%88%AC%E8%99%AB&sort=hottest" class="inline-block mr-1 text-muted">爬虫</a>
+            </div>
+            <div class="col p-3">
+                    <h4 class="h6"><a href="/lives/free?category=3&sort=hottest" class=" text-reset">移动端开发</a></h4>
+    
+
+                <a href="/lives/free?tag=android&sort=hottest" class="inline-block mr-1 text-muted">Android</a>
+                <a href="/lives/free?tag=ios&sort=hottest" class="inline-block mr-1 text-muted">iOS</a>
+                <a href="/lives/free?tag=react-native&sort=hottest" class="inline-block mr-1 text-muted">React Native</a>
+                <a href="/lives/free?tag=flutter&sort=hottest" class="inline-block mr-1 text-muted">Flutter</a>
+                <a href="/lives/free?tag=%E5%B0%8F%E7%A8%8B%E5%BA%8F&sort=hottest" class="inline-block mr-1 text-muted">小程序</a>
+            </div>
+            <div class="col p-3">
+                    <h4 class="h6"><a href="/lives/free?category=4&sort=hottest" class=" text-reset">云计算/大数据</a></h4>
+    
+
+                <a href="/lives/free?tag=docker&sort=hottest" class="inline-block mr-1 text-muted">Docker</a>
+                <a href="/lives/free?tag=%E5%A4%A7%E6%95%B0%E6%8D%AE&sort=hottest" class="inline-block mr-1 text-muted">大数据</a>
+                <a href="/lives/free?tag=kubernetes&sort=hottest" class="inline-block mr-1 text-muted">Kubernetes</a>
+                <a href="/lives/free?tag=%E7%AE%97%E6%B3%95&sort=hottest" class="inline-block mr-1 text-muted">算法</a>
+                <a href="/lives/free?tag=hadoop&sort=hottest" class="inline-block mr-1 text-muted">Hadoop</a>
+                <a href="/lives/free?tag=spark&sort=hottest" class="inline-block mr-1 text-muted">Spark</a>
+            </div>
+            <div class="col p-3">
+                    <h4 class="h6"><a href="/lives/free?category=5&sort=hottest" class=" text-reset">运维/其他</a></h4>
+    
+
+                <a href="/lives/free?tag=devops&sort=hottest" class="inline-block mr-1 text-muted">DevOps</a>
+                <a href="/lives/free?tag=%E8%BF%90%E7%BB%B4&sort=hottest" class="inline-block mr-1 text-muted">运维</a>
+                <a href="/lives/free?tag=linux&sort=hottest" class="inline-block mr-1 text-muted">Linux</a>
+                <a href="/lives/free?tag=%E6%B5%8B%E8%AF%95&sort=hottest" class="inline-block mr-1 text-muted">测试</a>
+                <a href="/lives/free?tag=mysql&sort=hottest" class="inline-block mr-1 text-muted">MySQL</a>
+                <a href="/lives/free?tag=redis&sort=hottest" class="inline-block mr-1 text-muted">Redis</a>
+                <a href="/lives/free?tag=nosql&sort=hottest" class="inline-block mr-1 text-muted">NoSQL</a>
+            </div>
+        </div>
+                            <div class="row">
+            <div class="col p-3" style="border-top: 1px solid #f3f3f3">
+                <span class="font-weight-bold">课程类型</span>
+                                <a href="/lives/search?sort=hottest" class="ml-2 text-secondary">不限</a>
+                                <a href="/lives/edu?sort=hottest" class="ml-2 text-secondary">精品课</a>
+                                <a href="/lives/study?sort=hottest" class="ml-2 text-secondary">实战课</a>
+                                <a href="/lives/free?sort=hottest" class="ml-2 bg-secondary text-white">免费课</a>
+                            </div>
+        </div>
+            </div>
+</div>
+    
+        
+    
+            <h3 class="mt-4 mb-0 h5">
+                            全部课程
+            
+            <div class="float-right fs-14 text-muted mt-1">
+                <a class="text-dark" href="/lives/free?sort=hottest">热门的</a>
+                &middot;
+                <a class="text-reset" href="/lives/free?sort=newest">最新的</a>
+            </div>
+        </h3>
+    
+                <div class="row live-cards">
+                    <div class="col-md-4 col-sm-6 col-12 my-2">
+                <div class="card h-100 border-0">
+                                        <div class="rounded-top overflow-hidden">
+                        <img src="https://live-static.segmentfault.com/268/121/2681212918-5d89d42439e00_render" class="card-img-top" alt="数据中台：宜信敏捷数据中台的建设实践">
+                    </div>
+                    <div class="card-body fs-14">
+                        <h5 class="card-title h6 mb-2"><a href="/ls/1650000020481677" class="text-reset stretched-link">数据中台：宜信敏捷数据中台的建设实践</a></h5>
+                                                    <p class="card-text text-secondary mb-2">
+                                4 人学习<span class="text-warning ml-2"></span>
+                            </p>
+                                                <p class="card-text price mb-2">
+                                    <strong class="text-danger">公开课：免费学</strong>
+                        </p>
+                        <p class="card-text meta">
+                                
+                        </p>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-md-4 col-sm-6 col-12 my-2">
+                <div class="card h-100 border-0">
+                                        <div class="rounded-top overflow-hidden">
+                        <img src="https://live-static.segmentfault.com/328/858/328858545-5d68cac251932_render" class="card-img-top" alt="融云微课堂第六讲 | 融云即时通讯平台消息处理模型">
+                    </div>
+                    <div class="card-body fs-14">
+                        <h5 class="card-title h6 mb-2"><a href="/ls/1650000020239656" class="text-reset stretched-link">融云微课堂第六讲 | 融云即时通讯平台消息处理模型</a></h5>
+                                                    <p class="card-text text-secondary mb-2">
+                                7 人学习<span class="text-warning ml-2"></span>
+                            </p>
+                                                <p class="card-text price mb-2">
+                                    <strong class="text-danger">公开课：免费学</strong>
+                        </p>
+                        <p class="card-text meta">
+                                
+                        </p>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-md-4 col-sm-6 col-12 my-2">
+                <div class="card h-100 border-0">
+                                        <div class="rounded-top overflow-hidden">
+                        <img src="https://live-static.segmentfault.com/282/850/282850987-5d8ad1a4581c0_render" class="card-img-top" alt="AI中台：智能聊天机器人平台|宜信技术沙龙">
+                    </div>
+                    <div class="card-body fs-14">
+                        <h5 class="card-title h6 mb-2"><a href="/ls/1650000020487630" class="text-reset stretched-link">AI中台：智能聊天机器人平台|宜信技术沙龙</a></h5>
+                                                <p class="card-text price mb-2">
+                                    <strong class="text-danger">公开课：免费学</strong>
+                        </p>
+                        <p class="card-text meta">
+                                
+                        </p>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-md-4 col-sm-6 col-12 my-2">
+                <div class="card h-100 border-0">
+                                        <div class="rounded-top overflow-hidden">
+                        <img src="https://live-static.segmentfault.com/716/155/716155454-5d89d11d56b82_render" class="card-img-top" alt="AI中台：一种敏捷的智能业务支持方案|宜信技术沙龙">
+                    </div>
+                    <div class="card-body fs-14">
+                        <h5 class="card-title h6 mb-2"><a href="/ls/1650000020481374" class="text-reset stretched-link">AI中台：一种敏捷的智能业务支持方案|宜信技术沙龙</a></h5>
+                                                    <p class="card-text text-secondary mb-2">
+                                1 人学习<span class="text-warning ml-2"></span>
+                            </p>
+                                                <p class="card-text price mb-2">
+                                    <strong class="text-danger">公开课：免费学</strong>
+                        </p>
+                        <p class="card-text meta">
+                                
+                        </p>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-md-4 col-sm-6 col-12 my-2">
+                <div class="card h-100 border-0">
+                                        <div class="rounded-top overflow-hidden">
+                        <img src="https://live-static.segmentfault.com/222/679/2226796224-5d53c0b2e82fc_render" class="card-img-top" alt="Web 应用开发实践">
+                    </div>
+                    <div class="card-body fs-14">
+                        <h5 class="card-title h6 mb-2"><a href="/ls/1650000020071062" class="text-reset stretched-link">Web 应用开发实践</a></h5>
+                                                    <p class="card-text text-secondary mb-2">
+                                17 人学习<span class="text-warning ml-2"></span>
+                            </p>
+                                                <p class="card-text price mb-2">
+                                    <strong class="text-danger">公开课：免费学</strong>
+                        </p>
+                        <p class="card-text meta">
+                                
+                        </p>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-md-4 col-sm-6 col-12 my-2">
+                <div class="card h-100 border-0">
+                                        <div class="rounded-top overflow-hidden">
+                        <img src="https://live-static.segmentfault.com/175/037/1750379765-5d53a394d5d3f_render" class="card-img-top" alt="Flutter 社区技术视频">
+                    </div>
+                    <div class="card-body fs-14">
+                        <h5 class="card-title h6 mb-2"><a href="/ls/1650000020068802" class="text-reset stretched-link">Flutter 社区技术视频</a></h5>
+                                                    <p class="card-text text-secondary mb-2">
+                                308 人学习<span class="text-warning ml-2"></span>
+                            </p>
+                                                <p class="card-text price mb-2">
+                                    <strong class="text-danger">公开课：免费学</strong>
+                        </p>
+                        <p class="card-text meta">
+                                
+                        </p>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-md-4 col-sm-6 col-12 my-2">
+                <div class="card h-100 border-0">
+                                        <div class="rounded-top overflow-hidden">
+                        <img src="https://live-static.segmentfault.com/253/880/2538806599-5d42ac6e0b7e8_render" class="card-img-top" alt="融云微课堂第五讲 | 基于原生代码开发 Flutter 插件">
+                    </div>
+                    <div class="card-body fs-14">
+                        <h5 class="card-title h6 mb-2"><a href="/ls/1650000019945714" class="text-reset stretched-link">融云微课堂第五讲 | 基于原生代码开发 Flutter 插件</a></h5>
+                                                    <p class="card-text text-secondary mb-2">
+                                7 人学习<span class="text-warning ml-2"></span>
+                            </p>
+                                                <p class="card-text price mb-2">
+                                    <strong class="text-danger">公开课：免费学</strong>
+                        </p>
+                        <p class="card-text meta">
+                                
+                        </p>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-md-4 col-sm-6 col-12 my-2">
+                <div class="card h-100 border-0">
+                                        <div class="rounded-top overflow-hidden">
+                        <img src="https://live-static.segmentfault.com/505/723/505723036-5d429c5365895_render" class="card-img-top" alt="融云微课堂第四讲 | Web RTC SDK 集成那些事儿">
+                    </div>
+                    <div class="card-body fs-14">
+                        <h5 class="card-title h6 mb-2"><a href="/ls/1650000019944839" class="text-reset stretched-link">融云微课堂第四讲 | Web RTC SDK 集成那些事儿</a></h5>
+                                                    <p class="card-text text-secondary mb-2">
+                                4 人学习<span class="text-warning ml-2"></span>
+                            </p>
+                                                <p class="card-text price mb-2">
+                                    <strong class="text-danger">公开课：免费学</strong>
+                        </p>
+                        <p class="card-text meta">
+                                
+                        </p>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-md-4 col-sm-6 col-12 my-2">
+                <div class="card h-100 border-0">
+                                        <div class="rounded-top overflow-hidden">
+                        <img src="https://live-static.segmentfault.com/113/535/1135355794-5d4289b14ff08_render" class="card-img-top" alt="融云微课堂第三讲 | 零基础快速实现音视频通话">
+                    </div>
+                    <div class="card-body fs-14">
+                        <h5 class="card-title h6 mb-2"><a href="/ls/1650000019942716" class="text-reset stretched-link">融云微课堂第三讲 | 零基础快速实现音视频通话</a></h5>
+                                                    <p class="card-text text-secondary mb-2">
+                                1 人学习<span class="text-warning ml-2"></span>
+                            </p>
+                                                <p class="card-text price mb-2">
+                                    <strong class="text-danger">公开课：免费学</strong>
+                        </p>
+                        <p class="card-text meta">
+                                
+                        </p>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-md-4 col-sm-6 col-12 my-2">
+                <div class="card h-100 border-0">
+                                        <div class="rounded-top overflow-hidden">
+                        <img src="https://live-static.segmentfault.com/356/583/3565839083-5d42819de056b_render" class="card-img-top" alt="融云微课堂第二期 | WebRTC 技术之路">
+                    </div>
+                    <div class="card-body fs-14">
+                        <h5 class="card-title h6 mb-2"><a href="/ls/1650000019942104" class="text-reset stretched-link">融云微课堂第二期 | WebRTC 技术之路</a></h5>
+                                                <p class="card-text price mb-2">
+                                    <strong class="text-danger">公开课：免费学</strong>
+                        </p>
+                        <p class="card-text meta">
+                                
+                        </p>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-md-4 col-sm-6 col-12 my-2">
+                <div class="card h-100 border-0">
+                                        <div class="rounded-top overflow-hidden">
+                        <img src="https://live-static.segmentfault.com/241/349/2413495764-5d416ab44079f_render" class="card-img-top" alt="教你从零开始实现多人版《你画我猜》小游戏">
+                    </div>
+                    <div class="card-body fs-14">
+                        <h5 class="card-title h6 mb-2"><a href="/ls/1650000019934494" class="text-reset stretched-link">教你从零开始实现多人版《你画我猜》小游戏</a></h5>
+                                                    <p class="card-text text-secondary mb-2">
+                                49 人学习<span class="text-warning ml-2"></span>
+                            </p>
+                                                <p class="card-text price mb-2">
+                                    <strong class="text-danger">公开课：免费学</strong>
+                        </p>
+                        <p class="card-text meta">
+                                
+                        </p>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-md-4 col-sm-6 col-12 my-2">
+                <div class="card h-100 border-0">
+                                        <div class="rounded-top overflow-hidden">
+                        <img src="https://live-static.segmentfault.com/521/675/521675535-5d4026b1101ef_render" class="card-img-top" alt="融云微课堂第一讲 | IM 即时通讯之移动端链路保活">
+                    </div>
+                    <div class="card-body fs-14">
+                        <h5 class="card-title h6 mb-2"><a href="/ls/1650000019923218" class="text-reset stretched-link">融云微课堂第一讲 | IM 即时通讯之移动端链路保活</a></h5>
+                                                    <p class="card-text text-secondary mb-2">
+                                3 人学习<span class="text-warning ml-2"></span>
+                            </p>
+                                                <p class="card-text price mb-2">
+                                    <strong class="text-danger">公开课：免费学</strong>
+                        </p>
+                        <p class="card-text meta">
+                                
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+                            
+            <ul class="pagination justify-content-center my-4">
+                            <li class="page-item disabled"><span aria-label="上一页" class="page-link">上一页</span></li>
+            
+            
+                                                <li class="page-item active"><span aria-label="第1页" class="page-link">1</span></li>
+                                                                <li class="page-item"><a class="page-link" aria-label="第2页"
+                                             href="/lives/free?sort=hottest&amp;page=2">2</a></li>
+                            
+            
+                            <li class="page-item"><a class="page-link" aria-label="下一页"
+                                         href="/lives/free?sort=hottest&amp;page=2">下一页</a></li>
+                    </ul>
+    
+    
+        </div>
+        <div class="col-lg-4 sidebar">
+                    <h3 class="h5">课程直播 <i class="fab fa-youtube text-primary"></i></h3>
+
+        <div class="list-group list-group-flush rounded overflow-hidden live-list mb-4">
+                    <a href="/ls/1650000020034970/l/1500000020036955" class="list-group-item list-group-item-action py-3">
+                <div class="media">
+                    <span class="img rounded mr-3" style="background-image: url(https://live-static.segmentfault.com/374/582/3745822174-5d551231669a6_render)"></span>
+                    <div class="media-body fs-14">
+                        <h5 class="h6 text-body mb-1 h-210">打通 C 语言与 PHP 的任督二脉 - 解析http协议，字符串内存不再懵逼</h5>
+                                                                        <p class="text-muted mb-0">
+                            10-01 周二 20:00 直播                         </p>
+                                            </div>
+                </div>
+            </a>
+                    <a href="/ls/1650000018958654/l/1500000020014413" class="list-group-item list-group-item-action py-3">
+                <div class="media">
+                    <span class="img rounded mr-3" style="background-image: url(https://live-static.segmentfault.com/532/033/532033051-5d4c3c90db672_render)"></span>
+                    <div class="media-body fs-14">
+                        <h5 class="h6 text-body mb-1 h-210">「一入 Java 深似海 」系列课程 第七期 第一节 Java 字节码基础</h5>
+                                                                        <p class="text-muted mb-0">
+                            10-05 周六 20:00 直播                         </p>
+                                            </div>
+                </div>
+            </a>
+            </div>
+
+        <h3 class="h5">热门课程</h3>
+
+        <div class="list-group list-group-flush rounded overflow-hidden live-list mb-4">
+                    <a href="/ls/1650000020034970" class="list-group-item list-group-item-action py-3">
+                <div class="media">
+                    <span class="img rounded mr-3" style="background-image: url(https://live-static.segmentfault.com/374/582/3745822174-5d551231669a6_render)"></span>
+                    <div class="media-body fs-14">
+                        <h5 class="h6 text-body mb-1 h-210">从 C 语言零基础到 PHP 扩展开发实战</h5>
+                                                    <p class="text-muted mb-0">
+                                105 人学习
+                                <span class="text-warning"><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i></span>
+                            </p>
+                                                                    </div>
+                </div>
+            </a>
+                    <a href="/ls/1650000019955274" class="list-group-item list-group-item-action py-3">
+                <div class="media">
+                    <span class="img rounded mr-3" style="background-image: url(https://live-static.segmentfault.com/138/377/1383772866-5d43ec0ed3609_render)"></span>
+                    <div class="media-body fs-14">
+                        <h5 class="h6 text-body mb-1 h-210">RPA入门到精通—【UiBot】高阶篇</h5>
+                                                    <p class="text-muted mb-0">
+                                4 人学习
+                                <span class="text-warning"></span>
+                            </p>
+                                                                    </div>
+                </div>
+            </a>
+                    <a href="/ls/1650000019914184" class="list-group-item list-group-item-action py-3">
+                <div class="media">
+                    <span class="img rounded mr-3" style="background-image: url(https://live-static.segmentfault.com/568/716/56871677-5d3fdf7ee4c1c_render)"></span>
+                    <div class="media-body fs-14">
+                        <h5 class="h6 text-body mb-1 h-210">RPA入门到精通—【UiBot】入门篇</h5>
+                                                    <p class="text-muted mb-0">
+                                15 人学习
+                                <span class="text-warning"></span>
+                            </p>
+                                                                    </div>
+                </div>
+            </a>
+                    <a href="/ls/1650000019793658" class="list-group-item list-group-item-action py-3">
+                <div class="media">
+                    <span class="img rounded mr-3" style="background-image: url(https://live-static.segmentfault.com/341/744/3417443053-5d2f133ab78a6_render)"></span>
+                    <div class="media-body fs-14">
+                        <h5 class="h6 text-body mb-1 h-210">如何快速开发一款小游戏</h5>
+                                                    <p class="text-muted mb-0">
+                                267 人学习
+                                <span class="text-warning"></span>
+                            </p>
+                                                                    </div>
+                </div>
+            </a>
+                    <a href="/ls/1650000019154222" class="list-group-item list-group-item-action py-3">
+                <div class="media">
+                    <span class="img rounded mr-3" style="background-image: url(https://live-static.segmentfault.com/433/883/433883449-5cd805b77fa07_render)"></span>
+                    <div class="media-body fs-14">
+                        <h5 class="h6 text-body mb-1 h-210">redux入门教程：redux完全指南 系列1：从入门到精通</h5>
+                                                    <p class="text-muted mb-0">
+                                43 人学习
+                                <span class="text-warning"></span>
+                            </p>
+                                                                    </div>
+                </div>
+            </a>
+            </div>
+
+
+            <h3 class="h5 mt-4">优秀讲师</h3>
+            <div class="list-group list-group-flush rounded overflow-hidden live-list mb-4">
+                                    <a href="/lives/teacher/mercyblitz" class="list-group-item list-group-item-action py-3">
+                    <div class="media">
+                        <img style="width: 64px; height: 64px;" class="mr-3 rounded" src="//i.bmp.ovh/imgs/2019/05/ef7997b4a3acf662.jpg" alt="小马哥">
+                        <div class="media-body fs-14">
+                            <h5 class="mt-0 mb-1 fs-16">小马哥</h5>
+                            <p class="text-muted mb-0">
+                                BAT 互联网技术专家，十余年 Java 从业经验，Apache 开源核心成员
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            
+                                    <a href="/lives/teacher/zhoumengkang" class="list-group-item list-group-item-action py-3">
+                    <div class="media">
+                        <img style="width: 64px; height: 64px;" class="mr-3 rounded" src="//i.bmp.ovh/imgs/2019/05/6b50f3e94fae4239.jpg" alt="周梦康">
+                        <div class="media-body fs-14">
+                            <h5 class="mt-0 mb-1 fs-16">周梦康</h5>
+                            <p class="text-muted mb-0">
+                                BAT 资深研发工程师，《深入 PHP 内核》作者之一，线互联网技术专家
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            
+                                    <a href="/lives/teacher/kaige" class="list-group-item list-group-item-action py-3">
+                    <div class="media">
+                        <img style="width: 64px; height: 64px;" class="mr-3 rounded" src="//avatar-static.segmentfault.com/357/746/3577469296-59aebb8e34152_big64" alt="凯威">
+                        <div class="media-body fs-14">
+                            <h5 class="mt-0 mb-1 fs-16">凯威</h5>
+                            <p class="text-muted mb-0">
+                                北大学霸，百度、Amazon 资深工程师，高并发高稳定性后台开发专家
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            
+                                    <a href="/lives/teacher/aresn" class="list-group-item list-group-item-action py-3">
+                    <div class="media">
+                        <img style="width: 64px; height: 64px;" class="mr-3 rounded" src="//avatar-static.segmentfault.com/249/220/2492209767-57f4471be4ae6_big64" alt="Aresn">
+                        <div class="media-body fs-14">
+                            <h5 class="mt-0 mb-1 fs-16">Aresn</h5>
+                            <p class="text-muted mb-0">
+                                iView 的作者，畅销书籍《Vue.js 实战》作者，大数据公司前端架构师
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            
+                                    <a href="/lives/teacher/lison16" class="list-group-item list-group-item-action py-3">
+                    <div class="media">
+                        <img style="width: 64px; height: 64px;" class="mr-3 rounded" src="//avatar-static.segmentfault.com/153/110/153110909-5b61282e8378d_big64" alt="Lison">
+                        <div class="media-body fs-14">
+                            <h5 class="mt-0 mb-1 fs-16">Lison</h5>
+                            <p class="text-muted mb-0">
+                                iView 核心开发者，iview-admin 作者，知名互联网公司 Vue 技术栈专家
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            
+                            <a href="/lives/apply" class="list-group-item list-group-item-action text-center text-primary font-weight-bold">申请成为讲师</a>
+            </div>
+
+    
+    <h3 class="h5">学习小助手</h3>
+    <div class="card border-0 mb-4">
+    <div class="card-body">
+        <div class="media">
+            <img width="64" class="mr-3" src="https://edu-cdn.segmentfault.com/v-5d5fb3db/images/qrcode_for_gh.svg">
+            <div class="media-body fs-14 text-secondary">
+                关注官方服务号，督促你坚持学习；<br>
+                服务号已绑定小程序，可在小程序上随时随地查看。
+            </div>
+        </div>
+    </div>
+</div>
+
+            <footer id="footer" class="text-muted fs-14">
+                <a href="https://about.segmentfault.com/" class="text-reset">关于我们</a> &middot; <a href="/tos" class="text-reset">服务条款</a> &middot; <a href="###" class="text-reset">内容许可</a><br>
+                <a href="https://business.segmentfault.com/contact" class="text-reset">联系我们</a> &middot; <a href="" class="text-reset">微信小程序</a>
+                 &middot; <a href="/lives/apply" target="_blank" class="text-reset">申请成为讲师</a><br>
+                <a href="/g/1570000009280187" class="text-reset">违法和不良信息举报</a><br>
+                <a href="http://beian.miit.gov.cn" class="text-reset">浙ICP备 15005796号-2</a><br>
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602002000" class="text-reset">浙公网安备 33010602002000号</a><br>
+                &copy; 2019 思否编程
+            </footer>
+        </div>
+            </div>
+</div>
+<script>
+    (function (w) {
+        w.SF = {
+            staticUrl: "https://edu-cdn.segmentfault.com/v-5d5fb3db/",
+            actionBase: "https://segmentfault.com"
+        };
+        w.SF.token = (function () {
+    var _CMfD8M4 = /* 'VL'//'VL' */''+/* 'W'//'W' */''+/* 'W'//'W' */''+'B'//'B'
++//'Q'
+'ee'+//'jZe'
+'75c'+//'Q'
+'d'+'e'//'c'
++//'J'
+'7'+//'cs8'
+'76b'+//'9HX'
+'2c6'+'2N0'//'2N0'
++//'OPG'
+'0b'+'db5'//'CIW'
++'b'//'wN'
++'86'//'hBb'
++//'a'
+'16'+//'EI'
+'8d'+'f1'//'2g'
++//'Rr'
+'0'+'5'//'n'
++'0e'//'PT5'
+, _dzC = [[0,1],[14,17]];
+
+    for (var i = 0; i < _dzC.length; i ++) {
+        _CMfD8M4 = _CMfD8M4.substring(0, _dzC[i][0]) + _CMfD8M4.substring(_dzC[i][1]);
+    }
+
+    return _CMfD8M4;
+})();;
+    })(window);
+</script>
+    <script src="https://edu-cdn.segmentfault.com/v-5d5fb3db/js/global.js"></script>
+
+
+
+<!-- 用于检测 Adblock -->
+<script src="https://static.segmentfault.com/v-5d8c9d24/global/script/ads.min.js" type="text/javascript"></script>
+
+<!-- 生产环节才加统计 -->
+<script>
+    // Google 统计
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-918487-8']);
+    _gaq.push(['_trackPageview']);
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+                
+    
+                
+    ga('create', 'UA-918487-8', 'auto', {
+        'userID': 0,
+        'createdTime': 0,
+        'now': 1569739536,
+        'allowLinker': true });
+    ga('require', 'linker');
+    ga('linker:autoLink', ['docs.segmentfault.com'] );
+    ga('set', 'dimension1', 'guest');
+    ga('send', 'pageview');
+
+    // 检测到 Adblock 将 ads.js 屏蔽时，发送统计到 GA
+    if(document.getElementById('UGTKzPZbRoOS')){
+        UGTKzPZbRoOS='No';
+    } else {
+        UGTKzPZbRoOS='Yes';
+    }
+
+    if(typeof ga !=='undefined'){
+        ga('send','event','Blocking Ads',UGTKzPZbRoOS,{'nonInteraction':1});
+    } else if(typeof _gaq !=='undefined'){
+        _gaq.push(['_trackEvent','Blocking Ads',UGTKzPZbRoOS,undefined,undefined,true]);
+    }
+
+
+    // 百度统计
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?e23800c454aa573c0ccb16b52665ac26";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>
