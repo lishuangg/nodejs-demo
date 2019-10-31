@@ -8,7 +8,6 @@ const server = http.createServer().listen(8083);
 
 server.on('request',(req,res) => {
     var _url = req.url;
-    // var _url01 = _url.split('/')[1];
     log('正在访问http://%s',req.headers.host + _url);
   
     if(_url === '/login_bg.jpg' || _url.split('/')[1] === 'images'){
