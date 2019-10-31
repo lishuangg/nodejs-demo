@@ -110,8 +110,11 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script>
-
-
-    
+    //转跳到通过http://localhost:8083/listmanager/访问  对应静态页list.html
+    $("#login").click(function() {
+        $.post("http://localhost:8083/loginEnter",{"username": $("#username").val(),"pwd": $("#pwd").val()}, function(data){
+            window.location = "http://localhost:8083/listmanager"
+        })
+    })
 </script>
 </html>

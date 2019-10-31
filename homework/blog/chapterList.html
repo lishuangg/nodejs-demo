@@ -93,6 +93,23 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 <script>
-    
+    $(document).ready(function() {
+        $.get("http://localhost:8083/listUpdate",function(data){
+            var dataObj = JSON.parse(data);
+            for(var i=0;i<dataObj.length;i++){
+                $(".oneblog:eq("+i+") h2 a").html(dataObj[i]["chapterName"]);
+                $(".oneblog:eq("+i+") figure img").attr('src',dataObj[i]["imgPath"]);
+                $(".oneblog:eq("+i+") .nlist p").html(dataObj[i]["chapterDes"]);
+                $(".oneblog:eq("+i+") .dateview span:eq(0)").html("发布时间："+dataObj[i]["publishTimer"]);
+                $(".oneblog:eq("+i+") .dateview span:eq(1)").html("作者："+dataObj[i]["author"]);
+                $(".oneblog:eq("+i+") .dateview span:eq(3)").html("浏览("+dataObj[i]["views"]+")");
+                $(".oneblog:eq("+i+") .nlist .readmore").attr('href',"http://localhost:8083/detail?chapterId="+dataObj[i]["chapterId"]);
+                //添加新文章
+                if(i >= 4){
+                    $(".page").before("<div class='oneblog'><h2><a title='' href=''>"+dataObj[i]["chapterName"]+"</a></h2><figure><img src="+dataObj[i]["imgPath"]+" border='0' width='120' height='120' alt=''></figure><ul class='nlist'><p>"+dataObj[i]["chapterDes"]+"</p><a title='' href='http://localhost:8083/detail?chapterId="+dataObj[i]["chapterId"]+"''"+" target='_blank' class='readmore'>阅读全文>></a></ul><p class='dateview'><span>发布时间："+dataObj[i]["publishTimer"]+"</span><span>作者："+dataObj[i]["author"]+"</span><span>分类：[<a href=''>悠客</a>]</span><span class='nl'>浏览("+dataObj[i]["views"]+")</span><span class='n2'>评论（<a href=''>0</a>）</span><div class='line'></div></p></div>");
+                }
+            }  
+        })
+    })
 </script>
 </html>
