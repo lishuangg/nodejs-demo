@@ -172,7 +172,7 @@
                                     213
                                 </td>
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <td>
                                     109
                                 </td>
@@ -199,7 +199,7 @@
                                 <td>
                                     213
                                 </td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
         </div>
@@ -218,9 +218,9 @@
                 $(".table tr:eq("+num+") td:eq(0)").html(dataObj[i]["chapterId"]);
                 $(".table tr:eq("+num+") td:eq(1)").html(dataObj[i]["chapterName"]);
                 $(".table tr:eq("+num+") td:eq(2)").html(dataObj[i]["views"]);
-                if(num>6){
+                if(num>4){
                     $(".table").append("<tr><td>"+dataObj[i]["chapterId"]+"</td><td>"+dataObj[i]["chapterName"]+"</td><td>"+dataObj[i]["views"]+"</td><td>"+213+"</td></tr>");
-                }
+                }       
             }  
         })
     })

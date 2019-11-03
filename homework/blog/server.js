@@ -78,6 +78,16 @@ server.on('request',(req,res) => {
                 res.end(buf.toString('utf8'));
             }
         });  
+    }else if(_url === '/loginEnter'){
+        //用户登录验证
+        req.on('data',function(data){ 
+            var user = qs.parse(data.toString('utf8'),"&",null,{maxKeys:2});
+            for(var i = 0;i<userList.length;i++){
+                if(userList[i].username === user.username && userList[i].pwd === user.pwd){
+                    res.end();
+                }
+            }
+        });
     }else if(_url === '/listmanager'){
         //访问后台文章列表页面/listmanager对应静态页list.html
         res.writeHead(200,{'Content-Type':'text/html'});
@@ -98,16 +108,6 @@ server.on('request',(req,res) => {
                 res.end(buf.toString('utf8'));
             }
         });  
-    }else if(_url === '/loginEnter'){
-        //用户登录验证
-        req.on('data',function(data){ 
-            var user = qs.parse(data.toString('utf8'),"&",null,{maxKeys:2});
-            for(var i = 0;i<userList.length;i++){
-                if(userList[i].username === user.username && userList[i].pwd === user.pwd){
-                    res.end();
-                }
-            }
-        });
     }else if(_url === '/add'){
         //添加文章
         req.on('data',function(data){
@@ -120,11 +120,12 @@ server.on('request',(req,res) => {
                 "imgPath": "images/1442457564979540.jpeg",
                 "chapterDes": "新添文章",
                 "chapterContent": article.content,
-                "publishTimer": date.getFullYear()+"-"+(date.getMonth()+1)+'-'+date.getDay(),
+                "publishTimer": date.getFullYear()+"-"+(date.getMonth()+1)+'-'+date.getDate(),
                 "author": "admin",
                 "views": 240
             }
             chapterList.push(art);
+            res.end();
         })
     }else{
         res.end("404");
