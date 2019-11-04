@@ -128,7 +128,8 @@ server.on('request',(req,res) => {
             res.end();
         })
     }else{
-        res.end("404");
+        res.statusCode = 404;
+        res.end('404 Error, resource not found!');
     }
 });
 
